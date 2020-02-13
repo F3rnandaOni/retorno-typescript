@@ -3,8 +3,9 @@ var enterprise;
 (function (enterprise) {
     var People = /** @class */ (function () {
         // Quando a classe for construída, é obrigatório que haja o valor de CPF. Assim pode-se retirar o union type do cpf.
-        function People(cpf) {
+        function People(name, cpf) {
             this.cpf = cpf;
+            this.name = name;
         }
         People.prototype.getName = function () {
             return this.name;

@@ -6,8 +6,9 @@ namespace enterprise {
         private age:number|undefined;
 
         // Quando a classe for construída, é obrigatório que haja o valor de CPF. Assim pode-se retirar o union type do cpf.
-        constructor(cpf:string){
+        constructor(name:string,cpf:string){
             this.cpf = cpf;
+            this.name = name;
         }
 
         getName():string|undefined{
